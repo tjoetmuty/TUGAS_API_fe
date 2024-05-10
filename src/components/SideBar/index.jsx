@@ -1,14 +1,10 @@
-import { PanelsTopLeft, Calendar } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { icons } from "../../constants";
 // import { useNavigate } from "react-router-dom";
 // import { useNavigate } from "react-router-dom";
 
 const Sidebar = () => {
-  const icons = [
-    { Icon: PanelsTopLeft, color: "#ffffff", path: "/to-do"},
-    { Icon: Calendar, color: "#ffffff", path: "/schedule" },
-  ];
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
     <div className="bg-black w-[70px] h-screen">
       <div className="flex flex-col gap-6 items-center pt-14">
@@ -17,7 +13,8 @@ const Sidebar = () => {
             <div
               key={index}
               className="hover:bg-gray-500 rounded-full p-2 duration-200 cursor-pointer"
-            onClick={() => navigate(icon.path)}>
+              onClick={() => navigate(icon.path)}
+            >
               <icon.Icon color={icon.color} />
             </div>
           ))}

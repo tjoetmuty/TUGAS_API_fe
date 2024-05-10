@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 
 const Wrapper = () => {
   return (
-    <div className="bg-stone-300">
+    <div className="bg-stone-300 h-screen">
       <div className="flex">
         <Sidebar />
         <SideMenu />

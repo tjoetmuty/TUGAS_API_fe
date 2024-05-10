@@ -6,7 +6,7 @@ import { Avatar, Space } from "antd";
 const Dashboard = () => {
   return (
     <div>
-      <div className="flex justify-between m-4 h-screen">
+      <div className="flex justify-between m-4">
         <h1 className="font-bold text-lg">Welcome Muty👋</h1>
         <Space wrap size={16}>
           <Avatar size="large" icon={<UserOutlined />} />
