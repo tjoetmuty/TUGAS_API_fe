@@ -3,7 +3,7 @@ import React from "react";
 import { UserOutlined } from "@ant-design/icons";
 import { Avatar, Space } from "antd";
 
-const About = () => {
+const Dashboard = () => {
   return (
     <div>
       <div className="flex justify-between m-4 h-screen">
@@ -16,4 +16,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Dashboard;
