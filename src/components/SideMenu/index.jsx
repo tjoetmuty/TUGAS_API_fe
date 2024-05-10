@@ -2,43 +2,11 @@
 import React, { useState } from "react";
 import play from "../../assets/chevron-right.svg";
 import { Menu } from "antd";
+import { menus } from "../../constants";
 
 const SideMenu = () => {
   const [open, setOpen] = useState(true);
-  const menus = [
-    {
-      key: "sub",
-      label: "Projects",
-      children: [
-        {
-          key: "1",
-          label: "All Projects",
-        },
-      ],
-    },
-    {
-      key: "sub1",
-      label: "Tasks",
-      children: [
-        {
-          key: "3",
-          label: "All Tasks",
-        },
-        {
-          key: "4",
-          label: "To Do",
-        },
-        {
-          key: "5",
-          label: "In Progress",
-        },
-        {
-          key: "6",
-          label: "Done",
-        },
-      ],
-    },
-  ];
+
   const onClick = (e) => {
     console.log("click ", e);
   };
@@ -59,7 +27,9 @@ const SideMenu = () => {
         />
         <div>
           <div className="flex flex-col gap-6">
-            <h1 className={`font-bold text-3xl m-6 ${!open && "hidden"}`}>Projects</h1>
+            <h1 className={`font-bold text-3xl m-6 ${!open && "hidden"}`}>
+              Projects
+            </h1>
             <div>
               <Menu
                 onClick={onClick}
